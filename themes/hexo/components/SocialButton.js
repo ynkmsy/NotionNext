@@ -33,8 +33,8 @@ const SocialButton = () => {
     setQrCodeShow(false)
   }
   return (
-    {/* <div className='w-full justify-center flex-wrap flex'>            社交图标按钮释这个div */}
-      <div className='space-x-3 text-xl flex items-center text-gray-600 dark:text-gray-300 '>
+    {/* <div className='w-full justify-center flex-wrap flex'>            
+      <div className='space-x-3 text-xl flex items-center text-gray-600 dark:text-gray-300 '>   社交图标按钮释这个div */}
         {CONTACT_GITHUB && (
           <a
             target='_blank'
