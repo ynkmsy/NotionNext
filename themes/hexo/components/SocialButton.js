@@ -7,6 +7,7 @@ import { useState } from 'react'
  * @returns {JSX.Element}
  * @constructor
  */
+{/*
 const SocialButton = () => {
   const CONTACT_GITHUB = siteConfig('CONTACT_GITHUB')
   const CONTACT_TWITTER = siteConfig('CONTACT_TWITTER')
@@ -32,7 +33,7 @@ const SocialButton = () => {
   const closePopover = () => {
     setQrCodeShow(false)
   }
-   {/*
+   
   return (
     <div className='w-full justify-center flex-wrap flex'>            
       <div className='space-x-3 text-xl flex items-center text-gray-600 dark:text-gray-300 '>   
