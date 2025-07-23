@@ -1,14 +1,12 @@
-
 import QrCode from '@/components/QrCode'
 import { siteConfig } from '@/lib/config'
-import { useState } from 'react'            
+import { useState } from 'react'
 
 /**
  * 社交联系方式按钮组
  * @returns {JSX.Element}
  * @constructor
  */
-
 const SocialButton = () => {
   const CONTACT_GITHUB = siteConfig('CONTACT_GITHUB')
   const CONTACT_TWITTER = siteConfig('CONTACT_TWITTER')
@@ -34,10 +32,9 @@ const SocialButton = () => {
   const closePopover = () => {
     setQrCodeShow(false)
   }
- {/*  
   return (
-    <div className='w-full justify-center flex-wrap flex'>            
-      <div className='space-x-3 text-xl flex items-center text-gray-600 dark:text-gray-300 '>   
+    <div className='w-full justify-center flex-wrap flex'>
+      <div className='space-x-3 text-xl flex items-center text-gray-600 dark:text-gray-300 '>
         {CONTACT_GITHUB && (
           <a
             target='_blank'
@@ -134,7 +131,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'小红书'}
             href={CONTACT_XIAOHONGSHU}>
-          
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className='transform hover:scale-125 duration-150 w-6'
               src='/svg/xiaohongshu.svg'
@@ -148,7 +145,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'知识星球'}
             href={CONTACT_ZHISHIXINGQIU}>
-           
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className='transform hover:scale-125 duration-150 w-6'
               src='/svg/zhishixingqiu.svg'
@@ -164,7 +161,7 @@ const SocialButton = () => {
             <div id='wechat-button'>
               <i className='transform scale-105 hover:scale-125 duration-150 fab fa-weixin  dark:hover:text-indigo-400 hover:text-indigo-600' />
             </div>
-           
+            {/* 二维码弹框 */}
             <div className='absolute'>
               <div
                 id='pop'
@@ -180,7 +177,7 @@ const SocialButton = () => {
           </button>
         )}
       </div>
-    </div>         
-  )          社交图标按钮释这个div */}
+    </div>
+  )
 }
-export default SocialButton            
+export default SocialButton
