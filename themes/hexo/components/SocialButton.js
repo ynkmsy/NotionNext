@@ -1,6 +1,7 @@
+{/*
 import QrCode from '@/components/QrCode'
 import { siteConfig } from '@/lib/config'
-import { useState } from 'react'
+import { useState } from 'react'            */}
 
 /**
  * 社交联系方式按钮组
@@ -180,6 +181,6 @@ const SocialButton = () => {
         )}
       </div>
     </div>         
-  )             社交图标按钮释这个div */}
+  )         
 }
-export default SocialButton
+export default SocialButton             社交图标按钮释这个div */}
